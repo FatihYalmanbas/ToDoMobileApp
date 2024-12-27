@@ -36,6 +36,7 @@
 		CD8DF0A72D187F1200282885 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8DF0A62D187F1200282885 /* RegisterViewViewModel.swift */; };
 		CD8DF0A92D187F4300282885 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8DF0A82D187F4300282885 /* ToDoListItemViewViewModel.swift */; };
 		CD8DF0AB2D18856400282885 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8DF0AA2D18856400282885 /* HeaderView.swift */; };
+		CDE41EEC2D1F439B00F8CB1F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE41EEB2D1F439B00F8CB1F /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		CD8DF0A62D187F1200282885 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		CD8DF0A82D187F4300282885 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		CD8DF0AA2D18856400282885 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CDE41EEB2D1F439B00F8CB1F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,10 +180,10 @@
 			children = (
 				CD8DF08C2D187C6C00282885 /* ProfileView.swift */,
 				CD8DF08E2D187C8E00282885 /* ToDoListView.swift */,
+				CD8DF0962D187D9E00282885 /* ToDoListItemView.swift */,
 				CD8DF0902D187CA700282885 /* NewItemView.swift */,
 				CD8DF0922D187CD700282885 /* LoginView.swift */,
 				CD8DF0942D187D0300282885 /* RegisterView.swift */,
-				CD8DF0962D187D9E00282885 /* ToDoListItemView.swift */,
 				CD8DF0AA2D18856400282885 /* HeaderView.swift */,
 				CD07DFA32D18B7EC00F484F4 /* TLButton.swift */,
 			);
@@ -193,11 +195,11 @@
 			children = (
 				CD8DF09C2D187E5C00282885 /* MainViewViewModel.swift */,
 				CD8DF09E2D187E7200282885 /* ProfileViewViewModel.swift */,
+				CD8DF0A82D187F4300282885 /* ToDoListItemViewViewModel.swift */,
 				CD8DF0A02D187EA600282885 /* ToDoListViewViewModel.swift */,
 				CD8DF0A22D187ECF00282885 /* NewItemViewViewModel.swift */,
 				CD8DF0A42D187EEB00282885 /* LoginViewViewModel.swift */,
 				CD8DF0A62D187F1200282885 /* RegisterViewViewModel.swift */,
-				CD8DF0A82D187F4300282885 /* ToDoListItemViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 				CD015C7A2D186969000E6F7E /* ToDoListApp.swift */,
 				CD015C7E2D18696C000E6F7E /* Assets.xcassets */,
 				CD0F166A2D1B02EB00510F63 /* Extensions.swift */,
+				CDE41EEB2D1F439B00F8CB1F /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			files = (
 				CD015C822D18696C000E6F7E /* Preview Assets.xcassets in Resources */,
 				CD015C7F2D18696C000E6F7E /* Assets.xcassets in Resources */,
+				CDE41EEC2D1F439B00F8CB1F /* Launch Screen.storyboard in Resources */,
 				CD015CAC2D18721A000E6F7E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,6 +549,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +578,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
