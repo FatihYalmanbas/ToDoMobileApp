@@ -36,6 +36,8 @@ struct ToDoListView: View {
                 .listStyle(PlainListStyle())
             }
             .navigationTitle("To Do List")
+            .offset(y:10)
+           
             
             // Add button added
             .toolbar {

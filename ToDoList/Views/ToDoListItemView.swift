@@ -16,10 +16,14 @@ struct ToDoListItemView: View {
             VStack(alignment: .leading) {
                 Text(item.title)
                     .font(.body)
+                    .padding(1)
+                    
                     
                 Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
                     .font(.footnote)
                     .foregroundColor(Color(.secondaryLabel))
+                    .padding(1)
+                    
             }
             Spacer()
             
