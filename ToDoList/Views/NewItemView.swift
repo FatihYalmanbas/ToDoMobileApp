@@ -27,22 +27,34 @@ struct NewItemView: View {
                 // Due Date
                 DatePicker("Due date", selection: $viewModel.dueDate)
                     .datePickerStyle(GraphicalDatePickerStyle())
-                
+                   
                 // Button
-                TLButton(title: "Save", background: .pink) {
-                    if viewModel.canSave {
-                        viewModel.save()
-                        newItemPresented = false
-                    } else {
-                        viewModel.showAlert = true
-                    }
-                }
+               
+                
+                //.padding(.bottom, 100)
+                //.offset(y:50)
+                
+               
                 
             }
             .alert(isPresented: $viewModel.showAlert) {
                 Alert(title: Text("Error"), message: Text("Please fill in all fields and select due date that is today or newer."))
                       }
+            
+            TLButton(title: "Save", background: .pink) {
+                if viewModel.canSave {
+                    viewModel.save()
+                    newItemPresented = false
+                } else {
+                    viewModel.showAlert = true
+                }
+            }
+            .buttonStyle(.plain)
+            .frame(width: 300, height: 80)
+            
+            
         }
+        
     }
 }
 
